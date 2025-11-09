@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nepal Hotel Booking - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-hotel"></i> Nepal Hotel Booking
+                </a>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="about.html">About Nepal</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li id="authMenu">
+                        <a href="login.html" class="btn-login">Login</a>
+                        <a href="register.html" class="btn-register">Sign Up</a>
+                    </li>
+                    <li id="userMenu" style="display: none;">
+                        <a href="#" id="dashboardLink" class="btn-dashboard">Dashboard</a>
+                        <a href="#" id="logoutBtn" class="btn-logout">Logout</a>
+                    </li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">Discover Amazing Places in Nepal</h1>
+            <p class="hero-subtitle">Book hotels and hostels across Nepal for students and tourists</p>
+            
+            <!-- Search Form -->
+            <form class="search-form" id="searchForm">
+                <div class="search-grid">
+                    <div class="search-field">
+                        <label>City</label>
+                        <input type="text" id="searchCity" placeholder="Kathmandu, Pokhara...">
+                    </div>
+                    <div class="search-field">
+                        <label>Check-in</label>
+                        <input type="date" id="checkIn">
+                    </div>
+                    <div class="search-field">
+                        <label>Check-out</label>
+                        <input type="date" id="checkOut">
+                    </div>
+                    <div class="search-field">
+                        <label>Guests</label>
+                        <input type="number" id="guests" min="1" value="1">
+                    </div>
+                </div>
+                <button type="submit" class="btn-search">Search</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section class="featured-section">
+        <div class="container">
+            <h2 class="section-title">Featured Properties</h2>
+            <div class="properties-grid" id="featuredProperties">
+                <div class="loading">Loading properties...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Cities -->
+    <section class="cities-section">
+        <div class="container">
+            <h2 class="section-title">Popular Cities</h2>
+            <div class="cities-grid">
+                <a href="search.html?city=Kathmandu" class="city-card">
+                    <h3>Kathmandu</h3>
+                </a>
+                <a href="search.html?city=Pokhara" class="city-card">
+                    <h3>Pokhara</h3>
+                </a>
+                <a href="search.html?city=Chitwan" class="city-card">
+                    <h3>Chitwan</h3>
+                </a>
+                <a href="search.html?city=Lumbini" class="city-card">
+                    <h3>Lumbini</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Nepal Hotel Booking</h3>
+                    <p>Your trusted platform for booking hotels and hostels in Nepal.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Nepal</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <p>Email: info@nepalhotelbooking.com</p>
+                    <p>Phone: +977-1-1234567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Nepal Hotel Booking. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+

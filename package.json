@@ -1,0 +1,18 @@
+{
+  "name": "nepal-hotel-booking",
+  "version": "1.0.0",
+  "description": "Hotel and Hostel Booking Website for Nepal",
+  "scripts": {
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "create-admin": "cd backend && node utils/createAdmin.js",
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm start",
+    "build:frontend": "cd frontend && npm run build"
+  },
+  "keywords": ["hotel", "booking", "nepal", "hostel"],
+  "author": "",
+  "license": "MIT"
+}
+
